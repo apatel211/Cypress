@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-25T19:56:09.604Z",
+    "end": "2024-01-25T19:56:16.000Z",
+    "duration": 6396,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7fd5ddd3-f185-41ef-b28f-62f033a656e6",
+      "title": "",
+      "fullFile": "cypress/e2e/Tc13_readcsv.spec.cy.js",
+      "file": "cypress/e2e/Tc13_readcsv.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "41d899b3-c541-4559-aa27-371fe48dcef3",
+          "title": "csv test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Conduit - Valid Credentials",
+              "fullTitle": "csv test Conduit - Valid Credentials",
+              "timedOut": null,
+              "duration": 5261,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Tc13_readcsv.spec.cy.js/csv test - - Conduit - Valid Credentials (failed.png)\"",
+              "code": "cy.visit('https://react-redux.realworld.io/');\ncy.contains('Sign in').click();\ncy.get('input[type=\"email\"]').type(table[0].username);\ncy.get('input[type=\"password\"]').type(table[0].password);\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Settings').click();\ncy.contains('Or click here to logout.').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Settings' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Settings' but never did.\n    at Context.eval (webpack://cypress/./cypress/e2e/Tc13_readcsv.spec.cy.js:23:11)",
+                "diff": null
+              },
+              "uuid": "b0de7928-d540-4a20-9d1d-dca1b6cd5246",
+              "parentUUID": "41d899b3-c541-4559-aa27-371fe48dcef3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Conduit - Invalid Credentials",
+              "fullTitle": "csv test Conduit - Invalid Credentials",
+              "timedOut": null,
+              "duration": 1037,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://react-redux.realworld.io/');\ncy.contains('Sign in').click();\ncy.get('input[type=\"email\"]').type(table[1].username);\ncy.get('input[type=\"password\"]').type(table[1].password);\ncy.get('button[type=\"submit\"]').click();\ncy.get('.error-messages').should('contain', 'email or password is invalid');",
+              "err": {},
+              "uuid": "1d27e5e9-50df-4a5a-b274-2d5ec976d0d1",
+              "parentUUID": "41d899b3-c541-4559-aa27-371fe48dcef3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1d27e5e9-50df-4a5a-b274-2d5ec976d0d1"
+          ],
+          "failures": [
+            "b0de7928-d540-4a20-9d1d-dca1b6cd5246"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "json": true,
+        "html": false,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

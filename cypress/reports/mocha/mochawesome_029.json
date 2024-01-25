@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-25T19:56:36.591Z",
+    "end": "2024-01-25T19:56:41.861Z",
+    "duration": 5270,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "54913b80-4839-443e-9cb5-78340a0f870e",
+      "title": "",
+      "fullFile": "cypress/e2e/Testcases/Tc_POMfile.spec.cy.js",
+      "file": "cypress/e2e/Testcases/Tc_POMfile.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cbeec35a-c5c0-42d2-ad7c-6f43f84cddba",
+          "title": "POM test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login using POM",
+              "fullTitle": "POM test  login using POM",
+              "timedOut": null,
+              "duration": 5210,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Tc_POMfile.spec.cy.js/POM test  - - login using POM (failed.png)\"",
+              "code": "cy.visit('/');\nLandingpage.clickSigninButton();\nLoginpage.enterEmail(this.data.email);\nLoginpage.enterPassword(this.data.password);\nLoginpage.clickSignInButton();\nHomepage.checkGlobalFeedIsVisible();\nHomepage.clickSettings();\nSettingPage.clickSignOutButton();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Global Feed' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Global Feed' but never did.\n    at homePage.checkGlobalFeedIsVisible (webpack://cypress/./cypress/e2e/page/homePage.js:10:42)\n    at Context.eval (webpack://cypress/./cypress/e2e/Testcases/Tc_POMfile.spec.cy.js:24:17)",
+                "diff": null
+              },
+              "uuid": "637166af-fbd5-4f66-9442-9a739e2b9dfc",
+              "parentUUID": "cbeec35a-c5c0-42d2-ad7c-6f43f84cddba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "637166af-fbd5-4f66-9442-9a739e2b9dfc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5210,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "json": true,
+        "html": false,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

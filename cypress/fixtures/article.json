@@ -1,0 +1,26 @@
+{
+    "articles": [
+        {
+            "slug": "If-we-quantify-the-alarm-we-can-get-to-the-FTP-pixel-through-the-online-SSL-interface!-120863",
+            "title": "demo",
+            "description": "demo",
+            "body": "demo",
+            "tagList": [
+                "rerum",
+                "maiores",
+                "omnis",
+                "quae"
+            ],
+            "createdAt": "2022-12-09T13:46:24.264Z",
+            "updatedAt": "2022-12-09T13:46:24.264Z",
+            "favorited": false,
+            "favoritesCount": 2310,
+            "author": {
+                "username": "ankita",
+                "bio": null,
+                "image": "https://api.realworld.io/images/demo-avatar.png",
+                "following": false
+            }
+        }],
+    "articlesCount": 1
+}

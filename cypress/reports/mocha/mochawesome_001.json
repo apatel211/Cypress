@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-15T17:23:09.697Z",
+    "end": "2023-12-15T17:23:15.059Z",
+    "duration": 5362,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5e3fb532-614b-468b-a0b5-264f715af174",
+      "title": "",
+      "fullFile": "cypress/e2e/smokeTest/Tc02_radioButton.spec.cy.js",
+      "file": "cypress/e2e/smokeTest/Tc02_radioButton.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59ad189f-98c7-45fe-9049-086027d8b485",
+          "title": "Radio button Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Different radio button test",
+              "fullTitle": "Radio button Functionality Different radio button test",
+              "timedOut": null,
+              "duration": 4407,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// basic radio button\ncy.visit('https://demos.jquerymobile.com/1.4.5/checkboxradio-radio/');\ncy.get('#radio-choice-').should('not.be.checked').click({\n  force: true\n});\ncy.get('#radio-choice-0b').should('not.be.checked').click({\n  force: true\n});\n// modern radio button \ncy.get('#radio-choice-h-2b').should('not.be.checked').click({\n  force: true\n});\ncy.get('#radio-choice-h-2c').should('not.be.checked').click({\n  force: true\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#radio-choice-`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#radio-choice-`, but never found it.\n    at Context.eval (webpack://cypress/./cypress/e2e/smokeTest/Tc02_radioButton.spec.cy.js:10:33)",
+                "diff": null
+              },
+              "uuid": "a4c25127-28c6-41f8-bbac-5f1f3460c4ef",
+              "parentUUID": "59ad189f-98c7-45fe-9049-086027d8b485",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a4c25127-28c6-41f8-bbac-5f1f3460c4ef"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4407,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "json": true,
+        "html": false,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

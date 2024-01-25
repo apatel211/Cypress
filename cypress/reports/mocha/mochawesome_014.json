@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-25T19:55:18.569Z",
+    "end": "2024-01-25T19:55:29.441Z",
+    "duration": 10872,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0396325a-e866-417b-9b0b-908792575901",
+      "title": "",
+      "fullFile": "cypress/e2e/Tc04_dropdown.spec.cy.js",
+      "file": "cypress/e2e/Tc04_dropdown.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "47f93f7c-5371-4c8a-8afa-13ddd0e4a4a1",
+          "title": "dropdown Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "static dropdown test",
+              "fullTitle": "dropdown Functionality static dropdown test",
+              "timedOut": null,
+              "duration": 348,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// dropdown button\ncy.visit('https://seleniumbase.io/demo_page');\ncy.get('#mySelect').select('Set to 50%').should('have.value', '50%');",
+              "err": {},
+              "uuid": "fe965f2c-656b-4834-b81c-5311952dcf24",
+              "parentUUID": "47f93f7c-5371-4c8a-8afa-13ddd0e4a4a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "dynamic dropdown test",
+              "fullTitle": "dropdown Functionality dynamic dropdown test",
+              "timedOut": null,
+              "duration": 1308,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// dropdown button\ncy.visit('https://demos.telerik.com/aspnet-ajax/dropdownlist/examples/overview/defaultcs.aspx');\ncy.get('#ctl00_ContentPlaceholder1_RadDropDownProducts').click();\ncy.get('.rddlItem').contains('Ikura').click();",
+              "err": {},
+              "uuid": "1dc200c8-094e-4409-8a6e-2024e3c104c3",
+              "parentUUID": "47f93f7c-5371-4c8a-8afa-13ddd0e4a4a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "multiple dropdown test",
+              "fullTitle": "dropdown Functionality multiple dropdown test",
+              "timedOut": null,
+              "duration": 4243,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// dropdown button\ncy.visit('https://demo.mobiscroll.com/select/multiple-select');\ncy.get('#multiple-select-input').click({\n  force: true\n});\ncy.get('div[class=\"mbsc-scroller-wheel-item mbsc-ios mbsc-ltr mbsc-wheel-item-checkmark mbsc-wheel-item-multi\"]').contains('Movies, Music & Games').click();\ncy.get('div[class=\"mbsc-scroller-wheel-item mbsc-ios mbsc-ltr mbsc-wheel-item-checkmark mbsc-wheel-item-multi\"]').contains('Electronics & Computers').click();",
+              "err": {},
+              "uuid": "e46866ca-4d11-4f0d-b9a2-2aaae1b113f3",
+              "parentUUID": "47f93f7c-5371-4c8a-8afa-13ddd0e4a4a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fe965f2c-656b-4834-b81c-5311952dcf24",
+            "1dc200c8-094e-4409-8a6e-2024e3c104c3",
+            "e46866ca-4d11-4f0d-b9a2-2aaae1b113f3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5899,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "json": true,
+        "html": false,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

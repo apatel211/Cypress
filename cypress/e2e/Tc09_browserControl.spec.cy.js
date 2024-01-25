@@ -1,0 +1,16 @@
+describe('Login Functionality',function(){
+    it('login test', function(){
+        cy.visit('https://react-redux.realworld.io/')
+        cy.contains('Sign in').click()
+        cy.go('back')
+        cy.go('forward')
+        cy.go(-1)
+        cy.go(1)
+        cy.get('input[placeholder="Email"]').type('ankita.it.2012@gmail.com')
+        cy.reload()
+        // cy.get('input[placeholder="Password"]').type('@Test12345')
+        // cy.get('button[type="Submit"]').click()
+        // cy.get('a[href="#settings"]').click()
+        // cy.get('.btn.btn-outline-danger').click()
+    })
+})

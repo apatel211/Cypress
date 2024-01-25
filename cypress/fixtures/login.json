@@ -1,0 +1,9 @@
+{
+    "user": {
+        "email": "ankita.it.2012@gmail.com",
+        "username": "ankita",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiYW5raXRhLml0LjIwMTJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJhcGF0ZWwyMTEifSwiaWF0IjoxNzAyNjY4MDU3LCJleHAiOjE3MDc4NTIwNTd9.5O20hvRtHmnEz3K8vAmRP0QhOk-JIPDCGG_CE_y9HMg"
+    }
+}

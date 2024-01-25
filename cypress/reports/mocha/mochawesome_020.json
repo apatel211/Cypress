@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-25T19:55:47.464Z",
+    "end": "2024-01-25T19:55:47.519Z",
+    "duration": 55,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "66cf5b7c-722f-4167-b61f-13fac5dfef79",
+      "title": "",
+      "fullFile": "cypress/e2e/Tc10_HooksBasics.spec.cy.js",
+      "file": "cypress/e2e/Tc10_HooksBasics.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "77da45db-7ef5-46f2-a645-4c179e8663fc",
+          "title": "hooks basic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search item ",
+              "fullTitle": "hooks basic search item ",
+              "timedOut": null,
+              "duration": 13,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('search item ');",
+              "err": {},
+              "uuid": "5f8ca5a8-7374-403e-8bba-b412ae36ff69",
+              "parentUUID": "77da45db-7ef5-46f2-a645-4c179e8663fc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "order item ",
+              "fullTitle": "hooks basic order item ",
+              "timedOut": null,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('order item ');",
+              "err": {},
+              "uuid": "9aa92c3c-df25-46cb-90b9-fd9ffa8714b8",
+              "parentUUID": "77da45db-7ef5-46f2-a645-4c179e8663fc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checkout item ",
+              "fullTitle": "hooks basic checkout item ",
+              "timedOut": null,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('checkout item h ');",
+              "err": {},
+              "uuid": "d0274d0f-2308-43fe-9ccd-5aa2226ba759",
+              "parentUUID": "77da45db-7ef5-46f2-a645-4c179e8663fc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5f8ca5a8-7374-403e-8bba-b412ae36ff69",
+            "9aa92c3c-df25-46cb-90b9-fd9ffa8714b8",
+            "d0274d0f-2308-43fe-9ccd-5aa2226ba759"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "json": true,
+        "html": false,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

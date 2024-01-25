@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-15T17:22:57.363Z",
+    "end": "2023-12-15T17:23:08.889Z",
+    "duration": 11526,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08ef132e-226e-4aa0-874a-2825322046da",
+      "title": "",
+      "fullFile": "cypress/e2e/smokeTest/Tc01_smokeScript.spec.cy.js",
+      "file": "cypress/e2e/smokeTest/Tc01_smokeScript.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "462e0d46-79d2-4452-94b8-e87e05a40e86",
+          "title": "Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login test",
+              "fullTitle": "Login Functionality login test",
+              "timedOut": null,
+              "duration": 11495,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('a[href=\"#login\"]').click();\ncy.get('input[placeholder=\"Email\"]').type('ankita.it.2012@gmail.com');\ncy.get('input[placeholder=\"Password\"]').type('@Test12345');\ncy.get('button[type=\"Submit\"]').click();\ncy.wait(10000);\ncy.get('a[href=\"#settings\"]').click();\ncy.get('.btn.btn-outline-danger').click();",
+              "err": {},
+              "uuid": "eba10834-5f3b-4c24-aca7-8fe4bf58ff3b",
+              "parentUUID": "462e0d46-79d2-4452-94b8-e87e05a40e86",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eba10834-5f3b-4c24-aca7-8fe4bf58ff3b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11495,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "json": true,
+        "html": false,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

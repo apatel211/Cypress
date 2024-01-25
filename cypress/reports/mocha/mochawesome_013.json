@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-15T18:10:28.546Z",
+    "end": "2023-12-15T18:10:30.148Z",
+    "duration": 1602,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "ab60ff3b-162f-4120-a26d-5076eb0cca4c",
+      "title": "",
+      "fullFile": "cypress/e2e/Tc11_hooksConduit.spec.cy.js",
+      "file": "cypress/e2e/Tc11_hooksConduit.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9b105425-97be-4a64-8b8a-ca42d4776e35",
+          "title": "hook conduit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create new post",
+              "fullTitle": "hook conduit create new post",
+              "timedOut": null,
+              "duration": 63,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Tc11_hooksConduit.spec.cy.js/hook conduit - - create new post (failed.png)\"",
+              "code": "cy.contains(' New Post').click();\ncy.get('//input[@placeholder=\"Article Title\"]').type('demo');\ncy.get('//input[@placeholder=\"What\\'s this article about?\"]').type('demo');\ncy.get('//textarea[@placeholder=\"Write your article (in markdown)\"]').type('demo');\ncy.get('//input[@placeholder=\"Enter tags\"]').type('demo');\ncy.get('//button[@type=\"button\"]').click();\ncy.wait(10000);",
+              "err": {
+                "message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(.btn.btn-outline-danger)\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `hook conduit`",
+                "estack": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(.btn.btn-outline-danger)\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `hook conduit`\n    at isElement (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:145625:62)\n    at validateType (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:145483:14)\n    at Object.isType (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:145514:7)\n    at $Cy.pushSubject (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:139158:22)\n    at wrapped (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:138718:19)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress/./cypress/e2e/Tc11_hooksConduit.spec.cy.js:32:40)",
+                "diff": null
+              },
+              "uuid": "cc45d1c6-5c8e-4af5-8808-3b0325d469bd",
+              "parentUUID": "9b105425-97be-4a64-8b8a-ca42d4776e35",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify feed",
+              "fullTitle": "hook conduit verify feed",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Global Feed').click();\ncy.get('.article-preview:nth-child(1)').should('contain', 'demo');",
+              "err": {},
+              "uuid": "a8523c94-24c6-45bc-9d08-79c29c52af2d",
+              "parentUUID": "9b105425-97be-4a64-8b8a-ca42d4776e35",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cc45d1c6-5c8e-4af5-8808-3b0325d469bd"
+          ],
+          "pending": [],
+          "skipped": [
+            "a8523c94-24c6-45bc-9d08-79c29c52af2d"
+          ],
+          "duration": 63,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "json": true,
+        "html": false,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
